@@ -32,7 +32,19 @@ struct Userinfo : Codable {
     let type:String?
     let created_at:String?
     let updated_at:String?
-    let client:String?
+    let client:Client1?
     let seller_info:String?
 
+}
+
+struct Client1 : Codable {
+    let id:Int?
+    let user_id:Int?
+    let country_id:Int?
+    let region_id:Int?
+    let city:String?
+    let zip_code:String?
+    let address:String?
+    let phone_number:String?
+    let image:String?
 }
